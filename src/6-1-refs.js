@@ -1,7 +1,7 @@
 /**
  * Variables primitivas.
  */
-let nombre = "<Pon tu nombre aquí>";
+let nombre = "Andrew";
 let curso = "Esenciales de JavaScript";
 
 function tomarCurso(nombre, curso) {

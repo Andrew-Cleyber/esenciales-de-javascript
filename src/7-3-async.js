@@ -21,39 +21,39 @@ const enviarCorreo = async () => {
 /**
  * Composición de un proceso complejo con chain.
  */
-const proceso = () =>
-  validarPeticion()
-    .then(formatearEmail)
-    .then(actualizarDatosDeUsuario)
-    .then(() => enviarCorreo().catch(() => console.warn("Fallo correo")))
-    .then(formatearResultado)
-    .then(() => console.log("Fin de proceso"))
-    .catch(() => console.error("Fallo"))
-    .finally(() => console.log("Limpiar proceso"));
+// const proceso = () =>
+//   validarPeticion()
+//     .then(formatearEmail)
+//     .then(actualizarDatosDeUsuario)
+//     .then(() => enviarCorreo().catch(() => console.warn("Fallo correo")))
+//     .then(formatearResultado)
+//     .then(() => console.log("Fin de proceso"))
+//     .catch(() => console.error("Fallo"))
+//     .finally(() => console.log("Limpiar proceso"));
 
 /**
  * Composición de un proceso complejo de forma imperativa.
  */
-// const proceso = async () => {
-//   try {
-//     await validarPeticion();
-//     await formatearEmail();
-//     await actualizarDatosDeUsuario();
+const proceso = async () => {
+  try {
+    await validarPeticion();
+    await formatearEmail();
+    await actualizarDatosDeUsuario();
 
-//     try {
-//       await enviarCorreo();
-//     } catch (err) {
-//       console.warn("Fallo correo");
-//     }
+    try {
+      await enviarCorreo();
+    } catch (err) {
+      console.warn("Fallo correo");
+    }
 
-//     await formatearResultado();
-//     console.log("Fin de proceso");
-//   } catch (err) {
-//     console.error("Fallo");
-//   } finally {
-//     console.log("Limpiar proceso");
-//   }
-// };
+    await formatearResultado();
+    console.log("Fin de proceso");
+  } catch (err) {
+    console.error("Fallo");
+  } finally {
+    console.log("Limpiar proceso");
+  }
+};
 
 /**
  * Playground.

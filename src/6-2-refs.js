@@ -2,14 +2,14 @@
  * Objetos con referencia.
  */
 let propiedades = {
-  nombre: "<Pon tu nombre aquí>",
+  nombre: "Andrew",
   curso: "Esenciales de JavaScript",
 };
 
 function tomarCurso(propiedades) {
-  propiedades.curso = "Cocina";
+  propiedades.curso = "Phyton";
   console.log(
-    `Hola! ${propiedades.nombre}, has tomado el curso ${propiedades.curso}`
+    `Hola! ${propiedades.nombre}, has tomado el curso de ${propiedades.curso}`
   );
 }
 
@@ -17,4 +17,5 @@ function tomarCurso(propiedades) {
  * Playground.
  */
 tomarCurso(propiedades);
+
 console.log(propiedades.curso);

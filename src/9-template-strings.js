@@ -1,4 +1,4 @@
-const nombre = "<Pon tu nombre aquí>";
+const nombre = "Andrew";
 const edad = 26;
 
 /**
@@ -16,3 +16,5 @@ console.log(`Hola, ${nombre}.
 --
 Gracias por estar en este curso.`);
 console.log(myTag`${nombre} es ${edad}.`);
+
+console.log("Hola, " + nombre)

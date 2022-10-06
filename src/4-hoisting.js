@@ -1,6 +1,7 @@
+"use strict"; 
 /**
  * Playground.
  */
-console.log(num);
+// console.log(num);
 let num = 1;
 console.log(num);

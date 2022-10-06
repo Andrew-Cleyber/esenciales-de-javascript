@@ -1,7 +1,7 @@
 /**
  * Descomenta la siguiente linea para habilitar el modo estricto.
  */
-// "use strict";
+"use strict";
 
 let objA = {
   numbers: [1, 2, 3],
@@ -30,3 +30,7 @@ let objB = {
  */
 objA.print();
 objB.print();
+
+
+
+
